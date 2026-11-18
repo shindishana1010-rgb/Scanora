@@ -1,0 +1,6 @@
+{
+  "name": "PaperScan",
+  "description": "Scan physical documents, receipts, and notes with your camera, enhance readability, and export clean multi-page PDFs.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

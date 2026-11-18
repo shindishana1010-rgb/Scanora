@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --color-brand-primary: #173B65;
+  --color-brand-secondary: #EAF3FC;
+  --color-brand-ink: #252525;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: #252525;
+    background-color: #ffffff;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+.pb-safe {
+  padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
+}
+
+/* Custom clean range slider for brightness/contrast controls */
+input[type="range"].paperscan-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 9999px;
+  background: #DCE8F6;
+  outline: none;
+}
+
+input[type="range"].paperscan-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 9999px;
+  background: #173B65;
+  border: 3px solid #ffffff;
+  box-shadow: 0 1px 4px rgba(23, 59, 101, 0.35);
+  cursor: pointer;
+}
+
+input[type="range"].paperscan-slider::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 9999px;
+  background: #173B65;
+  border: 3px solid #ffffff;
+  box-shadow: 0 1px 4px rgba(23, 59, 101, 0.35);
+  cursor: pointer;
+}
